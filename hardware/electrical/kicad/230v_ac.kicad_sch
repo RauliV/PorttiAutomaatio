@@ -1,0 +1,45 @@
+(kicad_sch (version 20211123) (generator eeschema)
+
+  (uuid 230v-ac-system-uuid)
+
+  (paper "A4")
+
+  (title_block
+    (title "230V AC Järjestelmä")
+    (date "2025-12-19")
+    (rev "1.0")
+    (comment 1 "Laturi, RCD, Sulanapito")
+  )
+
+  (lib_symbols
+    (symbol "Device:Fuse" (pin_numbers hide) (pin_names (offset 0)) (in_bom yes) (on_board yes)
+      (property "Reference" "F" (id 0) (at 2.032 0 90)
+        (effects (font (size 1.27 1.27)))
+      )
+      (property "Value" "Fuse" (id 1) (at -1.905 0 90)
+        (effects (font (size 1.27 1.27)))
+      )
+      (property "Datasheet" "~" (id 3) (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+    )
+  )
+
+  (junction (at 50 50) (diameter 0) (color 0 0 0 0))
+
+  (text "230V AC VERKKO\n\nL = Ruskeamusta\nN = Sininen\nPE = Keltavihreä\n\nRCD 30mA suojaus\nLaturi: 230V AC → 12V DC\nSulanapito: Termostaatti -5...+10°C"
+    (at 30 30 0)
+    (effects (font (size 2 2)) (justify left))
+  )
+
+  (text "TODO:\n- Lisää RCD-symboli (30mA)\n- Lisää laturi-symboli\n- Lisää termostaatti\n- Lisää sulanapitokaapeli\n- Kytkentäviivat"
+    (at 150 30 0)
+    (effects (font (size 1.5 1.5) italic) (justify left))
+  )
+
+  (sheet_instances
+    (path "/230v-ac-system" (page "2"))
+  )
+
+  (symbol_instances)
+)
