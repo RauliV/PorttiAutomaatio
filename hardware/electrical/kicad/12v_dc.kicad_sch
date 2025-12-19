@@ -1,0 +1,32 @@
+(kicad_sch (version 20211123) (generator eeschema)
+
+  (uuid 12v-dc-system-uuid)
+
+  (paper "A4")
+
+  (title_block
+    (title "12V DC Tehokisko")
+    (date "2025-12-19")
+    (rev "1.0")
+    (comment 1 "Akku, PWM/H-silta, Vinssi, DC/DC")
+  )
+
+  (lib_symbols
+  )
+
+  (text "12V DC TEHOKISKO\n\nAkku: 12V 40-70Ah AGM\nPääsulake: ANL 100A\nPWM/H-silta: 60A cont, 100A peak\nVinssi: Biltema 15-510\nDC/DC: 12V → 5V 3A\n\nKaapelit:\n- 16mm² (AWG 6) tehokisko\n- 2.5mm² ohjaus"
+    (at 30 30 0)
+    (effects (font (size 2 2)) (justify left))
+  )
+
+  (text "TODO:\n- Lisää akku-symboli (12V)\n- Lisää ANL-sulake (100A)\n- Lisää katkaisin (100A)\n- Lisää PWM/H-silta\n- Lisää vinssi (moottori)\n- Lisää DC/DC-muunnin\n- Lisää TVS-diodi (SM8S24A)\n- Kytkentäviivat"
+    (at 150 30 0)
+    (effects (font (size 1.5 1.5) italic) (justify left))
+  )
+
+  (sheet_instances
+    (path "/12v-dc-system" (page "3"))
+  )
+
+  (symbol_instances)
+)

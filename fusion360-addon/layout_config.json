@@ -1,0 +1,323 @@
+{
+  "plate": {
+    "width": 200,
+    "height": 120,
+    "thickness": 2
+  },
+
+  "slots": {
+    "width": 6,
+    "height": 3
+  },
+
+  "mount_holes": {
+    "diameter": 5,
+    "offset": 8,
+    "count": 4,
+    "pattern": "corners"
+  },
+
+  "blocks": [
+    {
+      "name": "Akku",
+      "param_name": "akku",
+      "width": 40,
+      "height": 20,
+      "thickness": 3,
+      "x_rel": -0.35,
+      "y_rel": 0.35
+    },
+    {
+      "name": "Pääsulake",
+      "param_name": "paasulake",
+      "width": 20,
+      "height": 10,
+      "thickness": 2,
+      "x_rel": -0.15,
+      "y_rel": 0.35
+    },
+    {
+      "name": "Katkaisin",
+      "param_name": "katkaisin",
+      "width": 20,
+      "height": 10,
+      "thickness": 2,
+      "x_rel": 0.05,
+      "y_rel": 0.35
+    },
+    {
+      "name": "Jakoblokki",
+      "param_name": "jakoblokki",
+      "width": 30,
+      "height": 10,
+      "thickness": 2,
+      "x_rel": 0.25,
+      "y_rel": 0.35
+    },
+    {
+      "name": "PWM-ohjain",
+      "param_name": "pwmohjain",
+      "width": 30,
+      "height": 15,
+      "thickness": 3,
+      "x_rel": 0.45,
+      "y_rel": 0.35
+    },
+    {
+      "name": "DC/DC 12->5V",
+      "param_name": "dcdc",
+      "width": 25,
+      "height": 15,
+      "thickness": 3,
+      "x_rel": -0.15,
+      "y_rel": 0.0
+    },
+    {
+      "name": "ESP32",
+      "param_name": "esp32",
+      "width": 30,
+      "height": 15,
+      "thickness": 3,
+      "x_rel": 0.15,
+      "y_rel": 0.0
+    },
+    {
+      "name": "Releet",
+      "param_name": "releet",
+      "width": 20,
+      "height": 12,
+      "thickness": 2,
+      "x_rel": 0.35,
+      "y_rel": 0.0
+    },
+    {
+      "name": "MOSFET-valot",
+      "param_name": "mosfetvalot",
+      "width": 25,
+      "height": 12,
+      "thickness": 2,
+      "x_rel": 0.55,
+      "y_rel": 0.0
+    },
+    {
+      "name": "Verkkovirta",
+      "param_name": "verkkovirta",
+      "width": 40,
+      "height": 20,
+      "thickness": 3,
+      "x_rel": -0.35,
+      "y_rel": -0.35
+    },
+    {
+      "name": "Laturi",
+      "param_name": "laturi",
+      "width": 25,
+      "height": 15,
+      "thickness": 3,
+      "x_rel": -0.15,
+      "y_rel": -0.35
+    },
+    {
+      "name": "RCD",
+      "param_name": "rcd",
+      "width": 25,
+      "height": 15,
+      "thickness": 3,
+      "x_rel": 0.05,
+      "y_rel": -0.35
+    },
+    {
+      "name": "Sulatusrele",
+      "param_name": "sulatusrele",
+      "width": 30,
+      "height": 15,
+      "thickness": 3,
+      "x_rel": 0.25,
+      "y_rel": -0.35
+    },
+    {
+      "name": "Sulanapitokaapeli",
+      "param_name": "sulanapitokaapeli",
+      "width": 30,
+      "height": 15,
+      "thickness": 3,
+      "x_rel": 0.45,
+      "y_rel": -0.35
+    },
+    {
+      "name": "Vinssi",
+      "param_name": "vinssi",
+      "width": 35,
+      "height": 18,
+      "thickness": 4,
+      "x_rel": -0.45,
+      "y_rel": 0.0
+    },
+    {
+      "name": "Aukaisunappi",
+      "param_name": "aukaisunappi",
+      "width": 15,
+      "height": 15,
+      "thickness": 2,
+      "x_rel": 0.65,
+      "y_rel": 0.35
+    },
+    {
+      "name": "Liikkeentunnistin1",
+      "param_name": "liikkeentunnistin1",
+      "width": 12,
+      "height": 12,
+      "thickness": 2,
+      "x_rel": -0.55,
+      "y_rel": 0.35
+    },
+    {
+      "name": "Liikkeentunnistin2",
+      "param_name": "liikkeentunnistin2",
+      "width": 12,
+      "height": 12,
+      "thickness": 2,
+      "x_rel": -0.55,
+      "y_rel": -0.35
+    }
+  ],
+
+  "wires": [
+    {
+      "name": "230V_verkko_laturi",
+      "from": "Verkkovirta",
+      "to": "Laturi",
+      "type": "power",
+      "voltage": 230,
+      "thickness": 2.5
+    },
+    {
+      "name": "230V_laturi_rcd",
+      "from": "Laturi",
+      "to": "RCD",
+      "type": "power",
+      "voltage": 230,
+      "thickness": 2.5
+    },
+    {
+      "name": "230V_rcd_sulatusrele",
+      "from": "RCD",
+      "to": "Sulatusrele",
+      "type": "power",
+      "voltage": 230,
+      "thickness": 2.5
+    },
+    {
+      "name": "230V_sulatusrele_sulanapitokaapeli",
+      "from": "Sulatusrele",
+      "to": "Sulanapitokaapeli",
+      "type": "power",
+      "voltage": 230,
+      "thickness": 2.5
+    },
+    {
+      "name": "12V_akku_paasulake",
+      "from": "Akku",
+      "to": "Pääsulake",
+      "type": "power",
+      "voltage": 12,
+      "thickness": 1.5
+    },
+    {
+      "name": "12V_paasulake_katkaisin",
+      "from": "Pääsulake",
+      "to": "Katkaisin",
+      "type": "power",
+      "voltage": 12,
+      "thickness": 1.5
+    },
+    {
+      "name": "12V_katkaisin_jakoblokki",
+      "from": "Katkaisin",
+      "to": "Jakoblokki",
+      "type": "power",
+      "voltage": 12,
+      "thickness": 1.5
+    },
+    {
+      "name": "12V_jakoblokki_pwm",
+      "from": "Jakoblokki",
+      "to": "PWM-ohjain",
+      "type": "power",
+      "voltage": 12,
+      "thickness": 1.5
+    },
+    {
+      "name": "12V_jakoblokki_dcdc",
+      "from": "Jakoblokki",
+      "to": "DC/DC 12->5V",
+      "type": "power",
+      "voltage": 12,
+      "thickness": 1.5
+    },
+    {
+      "name": "12V_jakoblokki_vinssi",
+      "from": "Jakoblokki",
+      "to": "Vinssi",
+      "type": "power",
+      "voltage": 12,
+      "thickness": 1.5
+    },
+    {
+      "name": "5V_dcdc_esp32",
+      "from": "DC/DC 12->5V",
+      "to": "ESP32",
+      "type": "power",
+      "voltage": 5,
+      "thickness": 1.0
+    },
+    {
+      "name": "signal_esp32_releet",
+      "from": "ESP32",
+      "to": "Releet",
+      "type": "signal",
+      "voltage": 3.3,
+      "thickness": 0.5
+    },
+    {
+      "name": "signal_esp32_pwm",
+      "from": "ESP32",
+      "to": "PWM-ohjain",
+      "type": "signal",
+      "voltage": 3.3,
+      "thickness": 0.5
+    },
+    {
+      "name": "signal_pwm_mosfet",
+      "from": "PWM-ohjain",
+      "to": "MOSFET-valot",
+      "type": "signal",
+      "voltage": 12,
+      "thickness": 0.5
+    },
+    {
+      "name": "signal_liike1_esp32",
+      "from": "Liikkeentunnistin1",
+      "to": "ESP32",
+      "type": "signal",
+      "voltage": 3.3,
+      "thickness": 0.5
+    },
+    {
+      "name": "signal_liike2_esp32",
+      "from": "Liikkeentunnistin2",
+      "to": "ESP32",
+      "type": "signal",
+      "voltage": 3.3,
+      "thickness": 0.5
+    },
+    {
+      "name": "signal_nappi_esp32",
+      "from": "Aukaisunappi",
+      "to": "ESP32",
+      "type": "signal",
+      "voltage": 3.3,
+      "thickness": 0.5
+    }
+  ]
+}

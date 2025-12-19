@@ -1,0 +1,11 @@
+{
+  "id": "com.rauli.layoutaddin",
+  "name": "PorttiKomponentit",
+  "description": "Luo Testilevyn, lohkot, kaapelireitit, läpiviennit ja kiinnitysreiät JSON-konfiguraation perusteella.",
+  "version": "1.0.0",
+  "author": "Rauli",
+  "company": "Rauli",
+  "supportedOS": ["MacOS", "Windows"],
+  "engine": "Fusion360",
+  "script": "PorttiKomponentit.py"
+}

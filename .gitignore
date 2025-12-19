@@ -1,0 +1,46 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+ENV/
+*.egg-info/
+
+# Fusion 360
+*.f3d.lock
+*.f3z
+*_recovered/
+
+# PlatformIO / ESP32
+.pio/
+.vscode/
+*.bin
+*.elf
+*.map
+
+# KiCad
+*.kicad_pcb-bak
+*.kicad_sch-bak
+*-backups/
+*.bak
+*.bck
+*.kicad_prl
+fp-info-cache
+hardware/electrical/kicad/exports/*.pdf
+
+# macOS
+.DS_Store
+._*
+
+# Secrets
+config.h
+secrets.h
+*.key
+.env
+
+# Build artifacts
+*.o
+*.a
+*.log
