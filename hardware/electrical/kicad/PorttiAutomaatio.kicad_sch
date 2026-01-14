@@ -1,58 +1,145 @@
-(kicad_sch (version 20211123) (generator eeschema)
-
-  (uuid 2a13a5dd-0e56-4ba5-87f3-1bf2c8e8f194)
-
-  (paper "A4")
-
-  (title_block
-    (title "Portin Automaatiojärjestelmä")
-    (date "2025-12-19")
-    (rev "1.0")
-    (company "")
-  )
-
-  (lib_symbols
-  )
-
-  (sheet (at 50 50) (size 50 25) (fields_autoplaced)
-    (stroke (width 0.1524) (type solid) (color 0 0 0 0))
-    (fill (color 0 0 0 0.0000))
-    (uuid 230v-ac-system)
-    (property "Sheet name" "230V AC Järjestelmä" (id 0) (at 50 49.3 0)
-      (effects (font (size 1.27 1.27)) (justify left bottom))
-    )
-    (property "Sheet file" "230v_ac.kicad_sch" (id 1) (at 50 75.63 0)
-      (effects (font (size 1.27 1.27)) (justify left top))
-    )
-  )
-
-  (sheet (at 50 90) (size 50 25) (fields_autoplaced)
-    (stroke (width 0.1524) (type solid) (color 0 0 0 0))
-    (fill (color 0 0 0 0.0000))
-    (uuid 12v-dc-system)
-    (property "Sheet name" "12V DC Tehokisko" (id 0) (at 50 89.3 0)
-      (effects (font (size 1.27 1.27)) (justify left bottom))
-    )
-    (property "Sheet file" "12v_dc.kicad_sch" (id 1) (at 50 115.63 0)
-      (effects (font (size 1.27 1.27)) (justify left top))
-    )
-  )
-
-  (sheet (at 50 130) (size 50 25) (fields_autoplaced)
-    (stroke (width 0.1524) (type solid) (color 0 0 0 0))
-    (fill (color 0 0 0 0.0000))
-    (uuid esp32-control)
-    (property "Sheet name" "ESP32 Ohjauselektroniikka" (id 0) (at 50 129.3 0)
-      (effects (font (size 1.27 1.27)) (justify left bottom))
-    )
-    (property "Sheet file" "esp32_control.kicad_sch" (id 1) (at 50 155.63 0)
-      (effects (font (size 1.27 1.27)) (justify left top))
-    )
-  )
-
-  (sheet_instances
-    (path "/" (page "1"))
-  )
-
-  (symbol_instances)
+(kicad_sch
+	(version 20250114)
+	(generator "eeschema")
+	(generator_version "9.0")
+	(uuid "2a13a5dd-0e56-4ba5-87f3-1bf2c8e8f194")
+	(paper "A4")
+	(title_block
+		(title "Portin Automaatiojärjestelmä")
+		(date "2025-12-19")
+		(rev "1.0")
+	)
+	(lib_symbols)
+	(sheet
+		(at 50 50)
+		(size 50 25)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "7cdf3183-b00b-4b9d-87f6-01433b690a34")
+		(property "Sheetname" "230V AC Järjestelmä"
+			(at 50 49.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "230v_ac.kicad_sch"
+			(at 50 75.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "PorttiAutomaatio"
+				(path "/2a13a5dd-0e56-4ba5-87f3-1bf2c8e8f194"
+					(page "2")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 50 90)
+		(size 50 25)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "86bdf7bc-f557-4713-b07a-f0342835e3d6")
+		(property "Sheetname" "12V DC Tehokisko"
+			(at 50 89.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "12v_dc.kicad_sch"
+			(at 50 115.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "PorttiAutomaatio"
+				(path "/2a13a5dd-0e56-4ba5-87f3-1bf2c8e8f194"
+					(page "3")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 50 130)
+		(size 50 25)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "872fdf1a-f435-418d-8811-394be8ed971c")
+		(property "Sheetname" "ESP32 Ohjauselektroniikka"
+			(at 50 129.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "esp32_control.kicad_sch"
+			(at 50 155.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "PorttiAutomaatio"
+				(path "/2a13a5dd-0e56-4ba5-87f3-1bf2c8e8f194"
+					(page "4")
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+	(embedded_fonts no)
 )

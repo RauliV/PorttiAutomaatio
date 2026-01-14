@@ -1,32 +1,37 @@
-(kicad_sch (version 20211123) (generator eeschema)
-
-  (uuid esp32-control-uuid)
-
-  (paper "A4")
-
-  (title_block
-    (title "ESP32 Ohjauselektroniikka")
-    (date "2025-12-19")
-    (rev "1.0")
-    (comment 1 "GPIO, Anturit, Releet, ADC")
-  )
-
-  (lib_symbols
-  )
-
-  (text "ESP32 WROOM/WROVER\n\nGPIO Kytkennät:\n- GPIO 25: PWM_ENABLE\n- GPIO 26: PWM_OUTPUT\n- GPIO 27: DIRECTION\n- GPIO 32: LIMIT_OPEN\n- GPIO 33: LIMIT_CLOSED\n- GPIO 34: MOTION_SENSOR\n- GPIO 35: E_STOP\n- GPIO 18: RELAY_LOCK\n- GPIO 19: RELAY_HEATER\n- GPIO 23: MOSFET_LIGHTS\n- GPIO 36: VOLTAGE_SENSE (ADC)\n- GPIO 39: CURRENT_SENSE (ADC)\n- GPIO 4:  TEMP_HEATSINK (ADC)"
-    (at 30 30 0)
-    (effects (font (size 1.5 1.5)) (justify left))
-  )
-
-  (text "TODO:\n- Lisää ESP32 Dev Board symboli\n- Lisää kaikki GPIO-yhteydet (25 kpl)\n- Lisää rajakytkimet\n- Lisää liikeanturit\n- Lisää releet (4CH)\n- Lisää MOSFET LED-valoille\n- Lisää ADC mittauspiirit\n- Kytkentäviivat"
-    (at 150 30 0)
-    (effects (font (size 1.5 1.5) italic) (justify left))
-  )
-
-  (sheet_instances
-    (path "/esp32-control" (page "4"))
-  )
-
-  (symbol_instances)
+(kicad_sch
+	(version 20250114)
+	(generator "eeschema")
+	(generator_version "9.0")
+	(uuid "f655514b-49c4-463a-8ddb-d24261f91f4f")
+	(paper "A4")
+	(title_block
+		(title "ESP32 Ohjauselektroniikka")
+		(date "2025-12-19")
+		(rev "1.0")
+		(comment 1 "GPIO, Anturit, Releet, ADC")
+	)
+	(lib_symbols)
+	(text "ESP32 WROOM/WROVER\n\nGPIO Kytkennät:\n- GPIO 25: PWM_ENABLE\n- GPIO 26: PWM_OUTPUT\n- GPIO 27: DIRECTION\n- GPIO 32: LIMIT_OPEN\n- GPIO 33: LIMIT_CLOSED\n- GPIO 34: MOTION_SENSOR\n- GPIO 35: E_STOP\n- GPIO 18: RELAY_LOCK\n- GPIO 19: RELAY_HEATER\n- GPIO 23: MOSFET_LIGHTS\n- GPIO 36: VOLTAGE_SENSE (ADC)\n- GPIO 39: CURRENT_SENSE (ADC)\n- GPIO 4:  TEMP_HEATSINK (ADC)"
+		(exclude_from_sim no)
+		(at 30 30 0)
+		(effects
+			(font
+				(size 1.5 1.5)
+			)
+			(justify left)
+		)
+		(uuid "0fea3247-0674-4404-ad9e-f47bc2f4fa5a")
+	)
+	(text "TODO:\n- Lisää ESP32 Dev Board symboli\n- Lisää kaikki GPIO-yhteydet (25 kpl)\n- Lisää rajakytkimet\n- Lisää liikeanturit\n- Lisää releet (4CH)\n- Lisää MOSFET LED-valoille\n- Lisää ADC mittauspiirit\n- Kytkentäviivat"
+		(exclude_from_sim no)
+		(at 150 30 0)
+		(effects
+			(font
+				(size 1.5 1.5)
+				(italic yes)
+			)
+			(justify left)
+		)
+		(uuid "ce9f03bd-9de5-4062-ba13-4b9afa1b8680")
+	)
 )
